@@ -1,5 +1,13 @@
-var nyancat = getElementById('cat');
-image.src="nyan_cat.png";
-image.id="cat";
+//Als er op de button geklikt wordt, komt er een img van Nyancat in de body
 
-//Haal cat uit de kast
+//wat is de button
+
+var btn getElementById('button')
+
+//wat is de img
+
+var nyancat = document.createElement("img")
+
+//welke handeling (click)
+
+document.button.addEventListener ('click', addCatImage)
