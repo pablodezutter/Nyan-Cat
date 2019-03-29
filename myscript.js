@@ -22,7 +22,7 @@ function mouseClick(){
   nyancat.style.width="100px";
   nyancat.style.height="100px";
   
-  
+  console.log (nyancat);
   
 
 
@@ -34,14 +34,21 @@ function mouseClick(){
 
 //Animation:
 //1.Nyancat valt schuin (45°) naar beneden
-var fallingcat= document.getElementsByClassName ("cat")
-nyancat.style
+//var fallingcat= document.getElementsByClassName ("animationcat")
 
+function catmove(){
+  var element=document.getElementById(cat);
+
+
+
+
+}
 
 //2.Meerdere Nyancats vallen naar beneden
+//Functie schrijven om méér elementen te creëren
+
 //3.Background veranderd naar Nyan bg
-var 
-function mouseClick(){
+
 
 
 //4.Nyancats vallen 10 seconden

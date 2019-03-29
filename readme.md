@@ -12,3 +12,8 @@ basisgedachten tussen //
 opzoeken op internet naar DOM manipulatie
 hier en daar fouten door naamgeving (image tussen "" of niet)
 var element = document.body.appendChild (nyancat); body vergeten!! 
+
+#29 maart
+class maken voor image
+function schrijven om nyancat te doen bewegen
+

@@ -5,8 +5,7 @@ width: 100vw;
 }
 
 .container{
-
-
+    position: relative;
 
 }
 
@@ -21,18 +20,7 @@ margin: auto;
 
 }
 
-
 .animationcat{
-    position:relative;
-    animation-name: animatedcat;
-    animation-duration: 10s;
-    
-
-}
-
-@keyframes animatedcat{ 
-
-
-0% {}
+position: absolute;
 
 }
