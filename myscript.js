@@ -18,21 +18,31 @@ function mouseClick(){
   var element = document.body.appendChild (nyancat);
   nyancat.src="nyan_cat.png";
   nyancat.id="cat";
+  nyancat.className="animationcat"
   nyancat.style.width="100px";
   nyancat.style.height="100px";
-}
+  
+  
+  
+
+
+  }
+  
+
+
+
 
 //Animation:
+//1.Nyancat valt schuin (45°) naar beneden
+var fallingcat= document.getElementsByClassName ("cat")
+nyancat.style
 
-// function myMove() {
-//   var elem = document.getElementById("cat");
-//   var pos = 0;
-//   var id = setInterval(frame, 5);
-//   function frame() {
-//     if (pos == 350) {
-//       clearInterval(id);
-//     } else {
-//       pos++;
-//       elem.style.top = pos + "px";
-//       elem.style.left = pos + "px";
-//     }
+
+//2.Meerdere Nyancats vallen naar beneden
+//3.Background veranderd naar Nyan bg
+var 
+function mouseClick(){
+
+
+//4.Nyancats vallen 10 seconden
+//5.Soundtrack

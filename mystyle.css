@@ -5,8 +5,7 @@ width: 100vw;
 }
 
 .container{
-height: 100%;
-width: 100px;
+
 
 
 }
@@ -19,5 +18,21 @@ width: 100px;
 height:50px;
 margin: auto;
 
+
+}
+
+
+.animationcat{
+    position:relative;
+    animation-name: animatedcat;
+    animation-duration: 10s;
+    
+
+}
+
+@keyframes animatedcat{ 
+
+
+0% {}
 
 }
