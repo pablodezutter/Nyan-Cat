@@ -22,4 +22,12 @@ groepswekr
 
 #2 april
 meerdere katten creeëren
+Raf (Bruce): samen met hulp  function createcat verbeterd, met Math floor positie bepaald, function regen aangemaakt met interval (- ipv met array), function catmove gemaakt 
+
++ Dries, hulp om de katten in 1x te laten verdwijnen met while functie
+
+veel werk gehad aan de button, die niet wilde centreren (er werd een scrollbar gegeven)
+uiteindelijk met flex toch in het midden
+onderste katten (die blijven hangen) laten verdwijnen door overflow te gebruiken.
+
 
