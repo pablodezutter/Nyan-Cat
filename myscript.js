@@ -15,6 +15,7 @@ naam[1].style.top = "50px";*/
 
 document.getElementById("btn-cat").addEventListener ('click', regen);
 
+
 function createCat(){
   var nyancat = document.createElement('img');
   
@@ -55,8 +56,13 @@ function regen(){
     catsGone(); 
     document.body.style.backgroundImage= "none";
   },10000);
-}  
 
+ }  
+
+//create music
+ /* var createMusic =new Audio ("Nyan Cat.mp3");
+ createMusic.play();
+*/
 
 
 
