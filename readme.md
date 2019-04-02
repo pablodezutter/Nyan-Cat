@@ -18,4 +18,8 @@ class maken voor image
 function schrijven om nyancat te doen bewegen
 
 # 1 april
+groepswekr
+
+#2 april
+meerdere katten creeëren
 

@@ -21,24 +21,34 @@ function mouseClick(){
   nyancat.src="nyan_cat.png";
   nyancat.id="cat";
   nyancat.className="animationcat"
-  nyancat.setAttribute("width", "50px");
+  nyancat.setAttribute("width", "150px");
   
- // console.log (nyancat);
+
+  var catArray = ["animationcat1", "animationcat2", "animationcat3", "animationcat4", "animationcat5"]
+ animationcat[0].style.padding = "10px";
+  animationcat[1].style.padding= "15px";
+  animationcat[1].style.transitionDelay= "1s"
+  animationcat[2].style.padding ="20px"
+  animationcat[2].style.transitionDelay="2s"
+  console.log(catArray)
+ 
+ 
+  // console.log (nyancat);
   catmove();
  
   function catmove(){
    var element=document.getElementsByClassName("animationcat");
-   console.log(element);
+     console.log(element);
    var pos=0;
-   var id= setInterval(frame,5);
+   var id= setInterval(frame, 1000/30);
    function frame(){
      if (pos== 200){
      clearInterval(id);
    }
    else {
    pos++;
-   element[0].style.top= pos +"px";
-   element[0].style.left= pos +"px";
+   element[0].style.top= pos +"vh";
+   element[0].style.left= pos +"vw";
     }
    }
 
