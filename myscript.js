@@ -7,52 +7,88 @@ var button = document.getElementById("btn-cat");
 /*var naam = ["text1", "text2"];
 naam[0].style.left = "0";
 naam[1].style.top = "50px";*/
- var nyancat = document.createElement('img');
-console.log (nyancat);
 //welke handeling (click)
 
-button.addEventListener ('click', mouseClick);
+//constante aanmaken om bodyelement te benoemen en  terug te vinden in array:
 
-function mouseClick(){
-  // if (document.getElementById("btn-cat")) {
-  //
-  // }
-  var element = document.body.appendChild (nyancat);
-  nyancat.src="nyan_cat.png";
-  nyancat.id="cat";
-  nyancat.className="animationcat"
-  nyancat.setAttribute("width", "150px");
+//const body = document.getElementsByTagName("body")[0];
+
+document.getElementById("btn-cat").addEventListener ('click', regen);
+
+function createCat(){
+  var nyancat = document.createElement('img');
   
+  
+  nyancat.src="nyan_cat.png";
+  nyancat.className="animationcat";
+   nyancat.style.transform= "none";
 
-  var catArray = ["animationcat1", "animationcat2", "animationcat3", "animationcat4", "animationcat5"]
- animationcat[0].style.padding = "10px";
-  animationcat[1].style.padding= "15px";
-  animationcat[1].style.transitionDelay= "1s"
-  animationcat[2].style.padding ="20px"
-  animationcat[2].style.transitionDelay="2s"
-  console.log(catArray)
+  
+  //parseINt = neem het cijfergedeelte van het resultaat
+let linkerPositie= Math.floor(parseInt(document.body.clientWidth)*Math.random());
+ linkerPositie*= Math.floor(Math.random()*2)==1 ? 1 : -1;
+  //Math floor rond af, Math. random: kiest getal tussen 0 en 1, is het 1 dan uitkomst = 1, is het 0 dan uitkomst -1
+  nyancat.style.left= linkerPositie + "px";
+  nyancat.style.top= "-150px";
+  document.body.appendChild (nyancat);
  
- 
-  // console.log (nyancat);
-  catmove();
- 
-  function catmove(){
-   var element=document.getElementsByClassName("animationcat");
-     console.log(element);
-   var pos=0;
-   var id= setInterval(frame, 1000/30);
-   function frame(){
-     if (pos== 200){
-     clearInterval(id);
-   }
-   else {
-   pos++;
-   element[0].style.top= pos +"vh";
-   element[0].style.left= pos +"vw";
+  return nyancat;
+
+
+
+ // console.log (nyancat);
+ // console.log (linkerPositie);
+  
+  
+  
+}
+
+function regen(){
+  document.body.style.backgroundImage="url('bckground_nyan.png')";
+  var regeninterval = setInterval(function(){
+  var cat= createCat ();
+  catmove (cat);
+  
+  }, 100);
+  setTimeout (function(){
+    clearInterval(regeninterval);
+    catsGone(); 
+    document.body.style.backgroundImage= "none";
+  },10000);
+}  
+
+
+
+
+
+
+
+  function catmove(cat){
+    console.log(cat.style.left);
+    //console.log(100vw);
+     
+    let linkerPositie= parseInt(cat.style.left) + parseInt(document.body.clientWidth);
+    //nieuwe random linkerpositie voor de animatie
+    var snelheid = Math.random()* 7;//*linkerPositie)/10 +2;
+   //var snelheid = 3;
+    //var vertraging = 1;
+    var vertraging = Math.floor (Math.random ()* (parseInt(document.body.clientWidth)/100));
+    cat.style.transition = "all " + snelheid + "s ease-in " + vertraging + 's';
+    cat.style.left = linkerPositie +"px"; 
+    cat.style.top = "100vh";
+
+  }
+
+  function catsGone(){
+    var alleKatten = document.getElementsByClassName("animationcat");
+    while(alleKatten[0] != undefined ){
+      console.log("cat nr " );
+      alleKatten[0].remove();
+
+
     }
-   }
 
- }
+
   }
   
 
