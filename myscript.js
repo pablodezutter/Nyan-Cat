@@ -60,8 +60,8 @@ function regen(){
  }  
 
 //create music
- /* var createMusic =new Audio ("Nyan Cat.mp3");
- createMusic.play();
+ /* const audio =new Audio ("Nyan Cat.mp3");
+ audio.play();
 */
 
 
