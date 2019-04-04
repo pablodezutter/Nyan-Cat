@@ -30,4 +30,5 @@ veel werk gehad aan de button, die niet wilde centreren (er werd een scrollbar g
 uiteindelijk met flex toch in het midden
 onderste katten (die blijven hangen) laten verdwijnen door overflow te gebruiken.
 
+ https://pablodezutter.github.io/Nyan-Cat/. 
 
